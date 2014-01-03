@@ -27,7 +27,7 @@ func main() {
     if err != nil {
         fmt.Printf("Bind: %s\n", err)
     }
-    ret, err := funcs.Call("a.foo", "fred");
+    ret, err := funcs.Call("a.foo", "fred")
     if err != nil {
         fmt.Printf("Call: %s\n", err)
     }
@@ -37,7 +37,7 @@ func main() {
     if err != nil {
         fmt.Printf("Bind: %s\n", err)
     }
-    ret, err = funcs.Call("a.bar", "fred");
+    ret, err = funcs.Call("a.bar", "fred")
     if err != nil {
         fmt.Printf("Call: %s\n", err)
     }
@@ -57,7 +57,7 @@ func main() {
         if err != nil {
             fmt.Printf("Bind: %s\n", err)
         }
-        ret, err = funcs.Call("A."+s.Method(i).Name, "fred");
+        ret, err = funcs.Call("A."+s.Method(i).Name, "fred")
         if err != nil {
             fmt.Printf("Call: %s\n", err)
         }
